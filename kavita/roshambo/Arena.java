@@ -31,6 +31,8 @@ public class Arena {
 
 			String playAgain = sc.nextLine();
 			restart(playAgain);
+			
+			sc.close();
 		}
 	}
 			private static boolean restart(String playAgain) {
