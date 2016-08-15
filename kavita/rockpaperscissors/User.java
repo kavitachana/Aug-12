@@ -37,7 +37,8 @@ public class User extends Player {
 
 				userChoice = play.nextLine();
 				userFailed = Validation.oppNumber(userChoice); 
-																
+			
+				play.close();
 
 			} while (userFailed);
 
@@ -45,7 +46,7 @@ public class User extends Player {
 			this.shoot();
 		
 			return stillPlaying;
-		
+			
 	}
 
 	@Override
